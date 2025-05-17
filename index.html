@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Webpage Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Webpage Demo</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#event-handling">Event Handling</a></li>
+        <li><a href="#interactive-elements">Interactive Elements</a></li>
+        <li><a href="#form-validation">Form Validation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Event Handling Section -->
+    <section id="event-handling">
+      <h2>Event Handling 🎈</h2>
+      <button id="actionBtn">Click Me</button>
+
+      <div id="hoverBox" class="hover-box">Hover over me</div>
+
+      <input type="text" id="keyInput" placeholder="Press any key" />
+    </section>
+
+    <!-- Interactive Elements Section -->
+    <section id="interactive-elements">
+      <h2>Interactive Elements 🎮</h2>
+
+      <button id="colorBtn">Change Color</button>
+
+      <div id="slideshow" class="slideshow">
+        <img src="https://picsum.photos/200/150?1" alt="Slide 1" />
+        <img src="https://picsum.photos/200/150?2" alt="Slide 2" />
+        <img src="https://picsum.photos/200/150?3" alt="Slide 3" />
+      </div>
+
+      <div class="tabs">
+        <button class="tabBtn" data-tab="1">Tab 1</button>
+        <button class="tabBtn" data-tab="2">Tab 2</button>
+      </div>
+      <div id="tab1" class="tabContent">Content for Tab 1</div>
+      <div id="tab2" class="tabContent" style="display:none;">Content for Tab 2</div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section id="form-validation">
+      <h2>Form Validation 📋</h2>
+      <form id="regForm" novalidate>
+        <label>Name: <input type="text" id="name" required placeholder="Enter your name" /></label><br /><br />
+        <label>Email: <input type="email" id="email" required placeholder="Enter your email" /></label><br />
+        <small id="emailMsg" class="error-msg"></small><br />
+        <label>Password: <input type="password" id="password" required minlength="8" placeholder="At least 8 characters" /></label><br />
+        <small id="passMsg" class="error-msg"></small><br />
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
