@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+nav ul.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+nav ul.nav-list li a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+nav ul.nav-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Event Handling Styles */
+#actionBtn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.5s ease;
+}
+
+#hoverBox {
+  width: 150px;
+  height: 100px;
+  background-color: #ccc;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border-radius: 4px;
+}
+
+/* Interactive Elements Styles */
+#colorBtn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: lightgray;
+  border-radius: 4px;
+  transition: background-color 0.5s ease;
+  margin-bottom: 20px;
+}
+
+.slideshow {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px #bbb;
+}
+
+.slideshow img {
+  width: 100%;
+  display: none;
+  border-radius: 6px;
+}
+
+.slideshow img:first-child {
+  display: block;
+}
+
+.tabs {
+  margin-bottom: 10px;
+}
+
+.tabBtn {
+  padding: 8px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tabBtn:hover {
+  background: #ddd;
+}
+
+.tabContent {
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+}
+
+/* Form Validation Styles */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9em;
+  height: 1.2em;
+}
+
+button[type="submit"] {
+  padding: 10px 25px;
+  cursor: pointer;
+  border: none;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #219150;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
+
+  nav ul.nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+  }
+
+  .slideshow {
+    width: 100%;
+    height: auto;
+  }
+}
